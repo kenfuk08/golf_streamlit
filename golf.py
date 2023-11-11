@@ -13,10 +13,10 @@ uploaded_file = st.file_uploader("判定したい画像をアップロードし�
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model("src\keras_model.h5", compile=False)
+model = load_model("src/keras_model.h5", compile=False)
 
 # Load the labels
-class_names = open("src\labels.txt", "r").readlines()
+class_names = open("src/labels.txt", "r").readlines()
 
 # Create the array of the right shape to feed into the keras model
 # The 'length' or number of images you can put into the array is
